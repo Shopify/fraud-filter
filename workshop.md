@@ -181,7 +181,9 @@ The last variable in our file, `filtersIndex`, stores the content of the list of
 ```jsx
 const filtersIndex =
   filters && filters.length > 0 ? (
-    <Card>{/* add a ResourceList of filters here... */}</Card>
+    <Card>
+      {/* add a ResourceList of filters here... */}
+    </Card>
   ) : null;
 ```
 
@@ -215,15 +217,16 @@ const filtersIndex =
         resourceName={{singular: 'filter', plural: 'filters'}}
         items={filters}
         renderItem={(filter) => filter.id}
-        bulkActions={stubBulkActions}
+        bulkActions={bulkActions}
       />
     </Card>
   ) : null;
 ```
 
-Finally, our reviews list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
+Our reviews list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
 
-<!-- TODO ADD IMAGE HERE -->
+![Step 2](/public/images/step-2.png)
+
 
 ## Step 3: Improving the resource list
 
@@ -262,7 +265,7 @@ Let's switch over to `components/FilterListItem/FilterListIem.js`. We've set up 
 
 Our filterList still doesn’t look much better, though:
 
-<!-- TODO ADD IMAGE HERE -->
+![Step 3-1](/public/images/step-3-1.png)
 
 ### Adding structure
 
@@ -301,7 +304,7 @@ const ordersAffectedText =
 
 Looking better already!
 
-<!-- TODO ADD IMAGE HERE -->
+![Step 3-2](/public/images/step-3-2.png)
 
 ### Styling mobile first
 
@@ -337,7 +340,8 @@ We’re on our way, let’s use a `480px` `min-width` media query to add some st
 }
 ```
 
-<!-- TODO ADD IMAGE -->
+![Step 3-3](/public/images/step-3-3.png)
+
 
 ## Closing thoughts
 
