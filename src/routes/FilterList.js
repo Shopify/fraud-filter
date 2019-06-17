@@ -2,10 +2,10 @@ import React from 'react';
 import {graphql} from 'react-apollo';
 import gql from 'graphql-tag';
 
-import {Page, Card, TextContainer, Tabs, SkeletonBodyText, SkeletonDisplayText, EmptyState} from '@shopify/polaris';
+import {Page, Card, TextContainer, Tabs, SkeletonBodyText, SkeletonDisplayText, EmptyState, ResourceList} from '@shopify/polaris';
 
 import emptyStateBackground from './../images/empty-state-bg.png';
-import {selected, tabs} from './../stubData';
+import {selected, tabs, bulkActions} from './../stubData';
 
 function FilterList({data: {loading, filters}}) {
   /* Comment or uncomment the next two lines to toggle the loading state */
@@ -13,7 +13,7 @@ function FilterList({data: {loading, filters}}) {
   // filters = null;
 
   /* Comment or uncomment the next line to toggle the empty state */
-  filters = [];
+  // filters = [];
 
   const loadingStateContent = loading ? (
     <Card sectioned>
@@ -40,7 +40,13 @@ function FilterList({data: {loading, filters}}) {
 
   const filtersIndex =
     filters && filters.length > 0 ? (
-      <Card>{/* add a ResourceList of filters here... */}</Card>
+      <ResourceList
+        showHeader
+        resourceName={{singular: 'filter', plural: 'filters'}}
+        items={filters}
+        renderItem={(filter) => filter.id}
+        bulkActions={bulkActions}
+      />
     ) : null;
 
   return (

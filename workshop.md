@@ -181,7 +181,9 @@ The last variable in our file, `filtersIndex`, stores the content of the list of
 ```jsx
 const filtersIndex =
   filters && filters.length > 0 ? (
-    <Card>{/* add a ResourceList of filters here... */}</Card>
+    <Card>
+      {/* add a ResourceList of filters here... */}
+    </Card>
   ) : null;
 ```
 
@@ -215,15 +217,16 @@ const filtersIndex =
         resourceName={{singular: 'filter', plural: 'filters'}}
         items={filters}
         renderItem={(filter) => filter.id}
-        bulkActions={stubBulkActions}
+        bulkActions={bulkActions}
       />
     </Card>
   ) : null;
 ```
 
-Finally, our reviews list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
+Our reviews list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
 
-<!-- TODO ADD IMAGE HERE -->
+![Step 2](/public/images/step-2.png)
+
 
 ## Step 3: Improving the resource list
 
