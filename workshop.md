@@ -171,7 +171,7 @@ import emptyStateBackground from './../images/empty-state-bg.png';
 
 You should see your empty state! If you change the viewport size, you'll see that the component is repsonsive by default.
 
-![Step 1-2](/public/images/step-1-3.png)
+![Step 1-3](/public/images/step-1-3.png)
 
 
 ## Step 2: Listing out filter content
