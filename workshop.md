@@ -265,7 +265,7 @@ Let's switch over to `components/FilterListItem/FilterListIem.js`. We've set up 
 
 Our filterList still doesn’t look much better, though:
 
-<!-- TODO ADD IMAGE HERE -->
+![Step 3-1](/public/images/step-3-1.png)
 
 ### Adding structure
 
@@ -304,7 +304,7 @@ const ordersAffectedText =
 
 Looking better already!
 
-<!-- TODO ADD IMAGE HERE -->
+![Step 3-2](/public/images/step-3-2.png)
 
 ### Styling mobile first
 
@@ -340,7 +340,8 @@ We’re on our way, let’s use a `480px` `min-width` media query to add some st
 }
 ```
 
-<!-- TODO ADD IMAGE -->
+![Step 3-3](/public/images/step-3-3.png)
+
 
 ## Closing thoughts
 
