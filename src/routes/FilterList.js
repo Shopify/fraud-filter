@@ -3,6 +3,7 @@ import {graphql} from 'react-apollo';
 import gql from 'graphql-tag';
 
 import {Page, Card, TextContainer, Tabs, SkeletonBodyText, SkeletonDisplayText, EmptyState, ResourceList} from '@shopify/polaris';
+import FilterListItem from '../components/FilterListItem/index';
 
 import emptyStateBackground from './../images/empty-state-bg.png';
 import {selected, tabs, bulkActions} from './../stubData';
@@ -44,7 +45,7 @@ function FilterList({data: {loading, filters}}) {
         showHeader
         resourceName={{singular: 'filter', plural: 'filters'}}
         items={filters}
-        renderItem={(filter) => filter.id}
+        renderItem={(filter) => <FilterListItem {...filter} />}
         bulkActions={bulkActions}
       />
     ) : null;

@@ -1,0 +1,20 @@
+.FilterListItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FilterListItem__Content {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .FilterListItem {
+    flex-wrap: nowrap;
+  }
+
+  .FilterListItem__Content {
+    flex-basis: auto;
+  }
+}
