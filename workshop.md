@@ -40,7 +40,7 @@ import {Page, Card, TextContainer, Tabs} from '@shopify/polaris';
 Futher down, you'll find a functional React component named `FilterList` that returns the page.
 
 ```jsx
-function FilterList({data: {loading, reviews}}) {
+function FilterList({data: {loading, filters}}) {
   /* Content logic... */
   return <Page title="Add a title here">
     {/* Page content... */}
@@ -50,13 +50,10 @@ function FilterList({data: {loading, reviews}}) {
 
 When building a Shopify app with Polaris, every view should start with a [Page](https://polaris.shopify.com/components/structure/page) component. All of the view's content will then nest inside of the `Page`.
 
-The `Page` component requires a `title` prop, which accepts a string to give the page a title.
+The `Page` component requires a `title` prop, which accepts a string to give the page a title. Let's go ahead and add one to our page, so that it looks like so:
 
-So far, our page looks like this:
 ![Step 1-1](/public/images/step-1-1.png)
 
-
-There are a number of optional props the `Page` component accepts, but all we need for this workshop is the `title`.
 
 If you scroll to the bottom of the file you'll see we have a GraphQL query setup to fetch the list of filters.
 
@@ -132,10 +129,6 @@ Just like the loading state, the content for our empty state is stored in a vari
 We can see what the empty state of our page looks like by commenting/uncommenting the following lines:
 
 ```jsx
-/* Comment or uncomment the next two lines to toggle the loading state */
-// loading = true;
-// filters = null;
-
 /* Comment or uncomment the next line to toggle the empty state */
 filters = [];
 ```
@@ -187,7 +180,7 @@ const filtersIndex =
   ) : null;
 ```
 
-To build the list of reviews, we'll use the Polaris `ResourceList` component. `ResourceList` displays the key details of a collection of resources (filters, in this case) that allow a merchant to find, select, take bulk action on, or navigate to see more details about each resource.
+To build the list of filters, we'll use the Polaris `ResourceList` component. `ResourceList` displays the key details of a collection of resources (filters, in this case) that allow a merchant to find, select, take bulk action on, or navigate to see more details about each resource.
 
 Let's start building our index. Import the ResourceList component, and place an instance inside of the `Card` in the `filtersIndex` variable.
 
@@ -223,7 +216,7 @@ const filtersIndex =
   ) : null;
 ```
 
-Our reviews list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
+Our filters list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
 
 ![Step 2](/public/images/step-2.png)
 
