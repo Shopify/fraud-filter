@@ -40,7 +40,7 @@ import {Page, Card, TextContainer, Tabs} from '@shopify/polaris';
 Futher down, you'll find a functional React component named `FilterList` that returns the page.
 
 ```jsx
-function FilterList({data: {loading, reviews}}) {
+function FilterList({data: {loading, filters}}) {
   /* Content logic... */
   return <Page title="Add a title here">
     {/* Page content... */}
@@ -180,7 +180,7 @@ const filtersIndex =
   ) : null;
 ```
 
-To build the list of reviews, we'll use the Polaris `ResourceList` component. `ResourceList` displays the key details of a collection of resources (filters, in this case) that allow a merchant to find, select, take bulk action on, or navigate to see more details about each resource.
+To build the list of filters, we'll use the Polaris `ResourceList` component. `ResourceList` displays the key details of a collection of resources (filters, in this case) that allow a merchant to find, select, take bulk action on, or navigate to see more details about each resource.
 
 Let's start building our index. Import the ResourceList component, and place an instance inside of the `Card` in the `filtersIndex` variable.
 
@@ -216,7 +216,7 @@ const filtersIndex =
   ) : null;
 ```
 
-Our reviews list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
+Our filters list view is complete...kind of! The only information being output is the `filter` id, which isn't helpul to the merchant. We'll probably want to render more informative content.
 
 ![Step 2](/public/images/step-2.png)
 
