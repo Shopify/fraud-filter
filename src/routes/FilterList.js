@@ -9,11 +9,11 @@ import {selected, tabs} from './../stubData';
 
 function FilterList({data: {loading, filters}}) {
   /* Comment or uncomment the next two lines to toggle the loading state */
-  loading = true;
-  filters = null;
+  // loading = true;
+  // filters = null;
 
   /* Comment or uncomment the next line to toggle the empty state */
-  // filters = [];
+  filters = [];
 
   const loadingStateContent = loading ? (
     <Card sectioned>

@@ -199,7 +199,7 @@ Since we don’t have any props, our page isn’t going to render–let's check 
 - The `resourceName` prop is also optional. It takes an object that specifies the singular and plural names of the resources so the component can use them when referencing the resources in places like the heading. If left blank, the resource list will just default to calling them items.
 - The `items` prop is required as well and takes an array of objects. We pass the resource list our array of filter objects here.
 - The `renderItem` prop is a callback function used by the resource list to map over and render the list of resources the `items` prop receives. Here is where we will instruct the component to render each filter.
-- The `bulkActions` prop specifies actions you can take on the currently selected items. We'll be adding this to our `ResourceList`, but aren't building out any actual actions, we'll be importing `stubBulkActions` from our `stubData` file.
+- The `bulkActions` prop specifies actions you can take on the currently selected items. We'll be adding this to our `ResourceList`, but aren't building out any actual actions, we'll be importing `bulkActions` from our `stubData` file.
 
 ```jsx
 const filtersIndex =
@@ -237,7 +237,7 @@ We've already created a custom component called `FilterListItem` for you. Import
   resourceName={{singular: 'filter', plural: 'filters'}}
   items={filters}
   renderItem={(filter) => <FilterListItem {...filter} />}
-  bulkActions={stubBulkActions}
+  bulkActions={bulkActions}
 />
 ```
 
