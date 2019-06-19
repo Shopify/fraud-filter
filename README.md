@@ -12,5 +12,4 @@ Use this repo to help build out an improved version of the Fraud Filter app with
 
 ## Authors
 Yesenia Perez-Cruz [@yesenia-perezcruz](https://github.com/yesenia-perezcruz)
-
 Sonja Farrell [@yourpalsonja](https://github.com/yourpalsonja)
