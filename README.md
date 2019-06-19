@@ -11,5 +11,5 @@ Use this repo to help build out an improved version of the Fraud Filter app with
 4. Use [workshop.md](/workshop.md) to follow along during the workshop
 
 ## Authors
-Yesenia Perez-Cruz [@yesenia-perezcruz](https://github.com/yesenia-perezcruz)
-Sonja Farrell [@yourpalsonja](https://github.com/yourpalsonja)
+[Yesenia Perez-Cruz](https://github.com/yesenia-perezcruz)
+[Sonja Farrell](https://github.com/yourpalsonja)
