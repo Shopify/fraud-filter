@@ -1,3 +1,5 @@
+# [Deprecated]: This repository is no longer maintained. It has been archived and receives no updates or security fixes.
+
 # Fraud Filter example app
 ## Unite 2019: Making Polaris work for you
 
